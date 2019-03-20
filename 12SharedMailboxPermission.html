@@ -164,7 +164,7 @@
             
             if(DL!="" && DLEmailValue!="" && sizeActivityValue==1 ){ 
            
-        document.getElementById("PowershellCommand").value = "import-csv \""+DLEmailValue+"\" | foreach-object {Add-MailboxPermission \""+ DL+"\" -User $_.UserData -AccessRights Fullaccess";
+        document.getElementById("PowershellCommand").value = "import-csv \""+DLEmailValue+"\" | foreach-object {Add-MailboxPermission \""+ DL+"\" -User $_.UserData -AccessRights Fullaccess}";
         copyText =document.getElementById("PowershellCommand");
   copyText.select();
   document.execCommand("copy");
